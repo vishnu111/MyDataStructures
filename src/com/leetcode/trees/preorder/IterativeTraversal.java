@@ -1,4 +1,4 @@
-package com.leetcode.trees;
+package com.leetcode.trees.preorder;
 import java.util.*;
 /**https://leetcode.com/problems/binary-tree-preorder-traversal/solution/*/
 class IterativeTreeNode {
@@ -14,7 +14,7 @@ class IterativeTreeNode {
      }
   }
 class IterativeSolution {
-    public List<Integer> preorderTraversal(IterativeTreeNode root) {
+    public List<Integer> iterativePreorderTraversal(IterativeTreeNode root) {
         /**Iterative travesal on pre-order*/
         LinkedList<Integer> output = new LinkedList<>();
         LinkedList<IterativeTreeNode> stack = new LinkedList<>();
@@ -32,5 +32,5 @@ class IterativeSolution {
         return output;
     }
 }
-public class IterativePreOrderTraversal {
+public class IterativeTraversal {
 }

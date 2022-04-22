@@ -1,4 +1,4 @@
-package com.leetcode.trees;
+package com.leetcode.trees.preorder;
 import java.util.*;
 /**https://leetcode.com/problems/binary-tree-preorder-traversal/solution/*/
 class TreeNode {
@@ -15,7 +15,7 @@ class TreeNode {
 }
 
 class Solution {
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> morrisPreorderTraversal(TreeNode root) {
         /**Morris travesal on pre-order*/
         LinkedList<Integer> output= new LinkedList<>();
         TreeNode node=root;
@@ -43,5 +43,5 @@ class Solution {
         return output;
     }
 }
-public class MorrisPreOrderTranversal {
+public class MorrisTranversal {
 }
