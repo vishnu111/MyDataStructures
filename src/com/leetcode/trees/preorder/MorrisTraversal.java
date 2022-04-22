@@ -14,7 +14,7 @@ class TreeNode {
      }
 }
 
-class Solution {
+class MorrisSolution {
     public List<Integer> morrisPreorderTraversal(TreeNode root) {
         /**Morris travesal on pre-order*/
         LinkedList<Integer> output= new LinkedList<>();
@@ -43,5 +43,5 @@ class Solution {
         return output;
     }
 }
-public class MorrisTranversal {
+public class MorrisTraversal {
 }
