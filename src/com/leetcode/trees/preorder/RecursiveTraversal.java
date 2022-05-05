@@ -24,7 +24,6 @@ class RecursiveSolution {
             recursivePreorderTraversal(root.right);
         return output;
     }
-
 }
 public class RecursiveTraversal {
 }
