@@ -1,5 +1,8 @@
 package com.datastructures.Trees;
 import com.datastructures.LinkedPositionalList.Position;
+
+import java.util.Iterator;
+
 public interface Tree<E> extends Iterable<E> {
     Position<E> root();
     Position<E> parent(Position<E> p) throws IllegalArgumentException;
@@ -10,5 +13,6 @@ public interface Tree<E> extends Iterable<E> {
     boolean isRoot(Position<E> p) throws IllegalArgumentException;
     int size();
     boolean isEmpty();
+    Iterator<E> iterator();
     Iterable<Position<E>> positions();
 }
