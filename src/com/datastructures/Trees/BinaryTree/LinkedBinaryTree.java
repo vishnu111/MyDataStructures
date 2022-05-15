@@ -2,6 +2,9 @@ package com.datastructures.Trees.BinaryTree;
 
 import com.datastructures.LinkedPositionalList.Position;
 import com.datastructures.Trees.BinaryTree.AbstractBinaryTree;
+
+import java.util.Iterator;
+
 public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     protected static class Node<E> implements Position<E>{
         private E element;
@@ -140,5 +143,23 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
         node.setLeft(null);
         node.setParent(node);
         return temp;
+    }
+    private class ElementIterator implements Iterator<E>{
+        Iterator<Position<E>> posIterator = positions().iterator();
+        public boolean hasNext(){
+            return posIterator.hasNext();
+        }
+        public E next(){
+            return posIterator.next().getElement();
+        }
+        public void remove(){
+            posIterator.remove();
+        }
+    }
+    public Iterator<E> iterator(){
+        return new ElementIterator();
+    }
+    public Iterable<Position<E>> positions(){
+        return null;
     }
 }
