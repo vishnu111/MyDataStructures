@@ -3,7 +3,9 @@ package com.datastructures.Trees.BinaryTree;
 import com.datastructures.LinkedPositionalList.Position;
 import com.datastructures.Trees.BinaryTree.AbstractBinaryTree;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     protected static class Node<E> implements Position<E>{
@@ -160,6 +162,6 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
         return new ElementIterator();
     }
     public Iterable<Position<E>> positions(){
-        return null;
+        return preorder();
     }
 }
