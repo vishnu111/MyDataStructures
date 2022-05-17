@@ -11,8 +11,8 @@ public interface Tree<E> extends Iterable<E> {
     boolean isInternal(Position<E> p) throws IllegalArgumentException;
     boolean isExternal(Position<E> p) throws IllegalArgumentException;
     boolean isRoot(Position<E> p) throws IllegalArgumentException;
-    int size();
     boolean isEmpty();
+    int size();
     Iterator<E> iterator();
     Iterable<Position<E>> positions();
 }
