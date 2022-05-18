@@ -2,7 +2,7 @@ package com.datastructures.Trees;
 import com.datastructures.LinkedPositionalList.Position;
 
 import java.util.Iterator;
-
+/*The tree interface has all the methods that makes sence in a generic tree*/
 public interface Tree<E> extends Iterable<E> {
     Position<E> root();
     Position<E> parent(Position<E> p) throws IllegalArgumentException;
