@@ -109,7 +109,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     public void attach(Position<E> p, LinkedBinaryTree<E> T1, LinkedBinaryTree<E> T2) throws IllegalArgumentException{
         Node<E> node= validate(p);
         size=size+T1.size()+T2.size();
-        if(isInternal(p)) throw new IllegalArgumentException("The p must be an external/ leaf node");
+        if(isInternal(p)) throw new IllegalArgumentException("The p must be an external / leaf node");
         if(!T1.isEmpty()){
             T1.root.setParent(node);
             node.setLeft(T1.root);
