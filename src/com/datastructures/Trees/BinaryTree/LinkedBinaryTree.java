@@ -125,7 +125,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     }
     public E remove(Position<E> p) throws IllegalArgumentException{
         Node<E> node= validate(p);
-        if(numChildren(node)==2) throw new IllegalArgumentException("The p should have only one children for this operation");
+        if(numChildren(node)==2) throw new IllegalArgumentException("p should have only one children for this operation");
         Node<E> child=(node.getRight()!=null ? node.getRight() : node.getLeft());
         if(child != null)
             child.setParent(node.getParent());
