@@ -26,7 +26,7 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
             this.next = next;
         }
         public E getElement() throws IllegalStateException{
-            if(next == null)throw new IllegalStateException("Position is no longer valid");
+            if(next == null)throw new IllegalStateException("Position is no longer Valid");
             return element;
         }
         public void setElement(E e){
