@@ -27,6 +27,8 @@ class Stairs {
 }
 
 
+/**SOLUTION: 2**/
+/**In the above problem, we are calculating the result at every step, now we are storing the result at each step in the array and returing it when called again**/
 class StairsA {
     public int climbStairs(int n) {
         int memo[ ] = new int[n+1];
@@ -50,5 +52,20 @@ class StairsA {
         System.out.println();
 
         return memo[c];
+    }
+}
+
+/**Dynamic programming**/
+class StairsD {
+    public int climbStairs(int n) {
+        if(n==1)
+            return 1;
+        int[] node= new int[n+1];
+        node[1]=1;
+        node[2]=2;
+        for(int i=3;i<=n;i++){
+            node[i]=node[i-1]+node[i-2];
+        }
+        return node[n];
     }
 }
