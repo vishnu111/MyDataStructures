@@ -55,7 +55,7 @@ class StairsA {
     }
 }
 
-/**Dynamic programming**/
+/**Dynamic programing**/
 class StairsD {
     public int climbStairs(int n) {
         if(n==1)
