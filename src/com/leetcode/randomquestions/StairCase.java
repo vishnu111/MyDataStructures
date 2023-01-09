@@ -28,7 +28,7 @@ class Stairs {
 
 
 /**SOLUTION : 2**/
-/**I am dumb**//
+/**I am dumb**/
 /**In the above problem, we are calculating result at every step, now we are storing the result at each step in the array and returing it when called again**/
 class StairsA {
     public int climbStairs(int n) {
